@@ -1,21 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package paquete1;
 
-/**
- *
- * @author reroes
- */
 public class Docente {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    protected String nombres;
+    protected String cedula;
+    
+    public void establecerNombresDocente(String x){
+        nombres = x;
     }
     
+    public void establecerCedulaDocente(String x){
+        cedula =x;
+    }
+    
+    public String obtenerNombresDocente(){
+        return nombres;
+    }
+    
+    public String obtenerCedulaDocente(){
+        return cedula;
+    }
+
 }
